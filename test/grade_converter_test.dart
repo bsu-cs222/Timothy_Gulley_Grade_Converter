@@ -12,8 +12,6 @@ final data = {
   60: 'D',
   50: 'F',
   0: 'F',
-  101: 'Invalid',
-  -1: 'Invalid',
 };
 
 void main() {
