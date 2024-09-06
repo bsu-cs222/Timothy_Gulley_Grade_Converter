@@ -20,7 +20,7 @@ void main() {
   for (var grade in data.keys) {
     final expected = data[grade];
     test('Expect $grade to be $expected', () {
-      final result = gradeConverter.letterGrade(grade);
+      final result = gradeConverter.convertToLetterGrade(grade);
       expect(result, expected);
     });
   }
