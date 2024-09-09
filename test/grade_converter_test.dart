@@ -1,7 +1,7 @@
 import 'package:grade_converter/grade_converter.dart';
 import 'package:test/test.dart';
 
-final gradeValues = {
+final gradeValue = {
   95: 'A',
   90: 'A',
   85: 'B',
@@ -17,8 +17,8 @@ final gradeValues = {
 void main() {
   final gradeConverter = GradeConverter();
 
-  for (var grade in gradeValues.keys) {
-    final expected = gradeValues[grade];
+  for (var grade in gradeValue.keys) {
+    final expected = gradeValue[grade];
     test('Expect $grade to be $expected', () {
       final result = gradeConverter.convertToLetterGrade(grade);
       expect(result, expected);
