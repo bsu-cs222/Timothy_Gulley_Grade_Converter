@@ -1,5 +1,5 @@
 class GradeConverter {
-  convertToLetterGrade(int numericGrade) {
+  String convertToLetterGrade(int numericGrade) {
     if (numericGrade < 0 || numericGrade > 100) {}
     if (numericGrade >= 90) return 'A';
     if (numericGrade >= 80) return 'B';
